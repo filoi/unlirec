@@ -1,0 +1,8 @@
+{
+  "type": "app",
+  "name": "settings",
+  "title": "Settings",
+  "coreApp": true,
+  "version": "29.7.9",
+  "description": ""
+}

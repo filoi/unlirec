@@ -1,0 +1,8 @@
+{
+  "type": "app",
+  "coreApp": true,
+  "title": "User management",
+  "name": "user",
+  "description": "An application for managing users, user-groups and user-roles",
+  "version": "1.2.1"
+}

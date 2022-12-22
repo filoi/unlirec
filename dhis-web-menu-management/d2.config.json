@@ -1,0 +1,8 @@
+{
+  "type": "app",
+  "name": "menu-management",
+  "title": "Menu Management",
+  "coreApp": true,
+  "version": "28.2.2",
+  "description": ""
+}

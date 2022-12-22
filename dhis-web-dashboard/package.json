@@ -1,0 +1,71 @@
+{
+    "name": "dashboard-app",
+    "version": "31.17.9",
+    "description": "DHIS2 Dashboard app",
+    "private": true,
+    "license": "BSD-3-Clause",
+    "dependencies": {
+        "@dhis2/analytics": "^20.9.1",
+        "@dhis2/app-runtime": "^2.12.3",
+        "@dhis2/app-runtime-adapter-d2": "^1.1.0",
+        "@dhis2/d2-i18n": "^1.1.0",
+        "@dhis2/d2-ui-core": "^7.3.3",
+        "@dhis2/d2-ui-interpretations": "^7.3.3",
+        "@dhis2/d2-ui-mentions-wrapper": "^7.3.3",
+        "@dhis2/d2-ui-rich-text": "^7.3.3",
+        "@dhis2/d2-ui-translation-dialog": "^7.3.3",
+        "@dhis2/data-visualizer-plugin": "^37.10.2",
+        "@dhis2/ui": "^6.25.3",
+        "classnames": "^2.3.1",
+        "d2": "^31.10.0",
+        "d2-utilizr": "^0.2.16",
+        "i18next": "^20.3.5",
+        "lodash": "^4.17.21",
+        "moment": "^2.29.1",
+        "react": "^16.14.0",
+        "react-dom": "^16.13.1",
+        "react-grid-layout": "1.2.2",
+        "react-redux": "^7.2.4",
+        "react-router-dom": "^5.2.0",
+        "redux": "^4.1.0",
+        "redux-logger": "^3.0.6",
+        "redux-thunk": "^2.3.0",
+        "reselect": "^4.0.0",
+        "styled-jsx": "3.3.2"
+    },
+    "scripts": {
+        "start": "d2-app-scripts start",
+        "coverage": "npm test -- --coverage",
+        "lint": "d2-style check",
+        "build": "d2-app-scripts build",
+        "build:netlify": "yarn build --standalone",
+        "test": "d2-app-scripts test",
+        "validate-push": "CI=true yarn test",
+        "postinstall": "patch-package",
+        "cypress:start": "BROWSER=none yarn start",
+        "cy:open-live": "cypress_dhis2_api_stub_mode=DISABLED d2-utils-cypress open --appStart 'yarn cypress:start'",
+        "cy:run-live": "cypress_dhis2_api_stub_mode=DISABLED d2-utils-cypress run --appStart 'yarn cypress:start'",
+        "cy:open-stub": "cypress_dhis2_api_stub_mode=STUB d2-utils-cypress open --appStart 'yarn cypress:start'",
+        "cy:run-stub": "cypress_dhis2_api_stub_mode=STUB d2-utils-cypress run --tags '@nonmutating' --appStart 'yarn cypress:start' --record",
+        "cy:capture": "cypress_dhis2_api_stub_mode=CAPTURE yarn d2-utils-cypress run --appStart 'yarn cypress:start'"
+    },
+    "devDependencies": {
+        "@dhis2/cli-app-scripts": "^7.7.4",
+        "@dhis2/cli-style": "^9.1.0",
+        "@dhis2/cli-utils-cypress": "^7.0.1",
+        "@dhis2/cypress-commands": "^7.0.1",
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^12.0.0",
+        "d2-manifest": "^1.0.0",
+        "eslint-plugin-cypress": "^2.11.3",
+        "immutability-helper": "^3.1.1",
+        "patch-package": "^6.4.7",
+        "postinstall-postinstall": "^2.1.0",
+        "redux-mock-store": "^1.5.4"
+    },
+    "jest": {
+        "moduleNameMapper": {
+            "^.+\\.(css|sass|scss)$": "identity-obj-proxy"
+        }
+    }
+}

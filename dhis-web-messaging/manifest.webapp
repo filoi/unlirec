@@ -1,0 +1,24 @@
+{
+  "app_hub_id": "335eff74-24b5-48db-a5f6-1f488d7847c3",
+  "appType": "APP",
+  "short_name": "messaging",
+  "name": "Messaging",
+  "description": "An application for sending internal messages",
+  "version": "100.0.13",
+  "core_app": true,
+  "launch_path": "index.html",
+  "default_locale": "en",
+  "activities": {
+    "dhis": {
+      "href": "*"
+    }
+  },
+  "icons": {
+    "48": "dhis2-app-icon.png"
+  },
+  "manifest_generated_at": "Sat Aug 27 2022 01:53:40 GMT+0000 (Coordinated Universal Time)",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "scope": "."
+}

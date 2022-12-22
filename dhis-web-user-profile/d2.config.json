@@ -1,0 +1,11 @@
+{
+  "type": "app",
+  "name": "user-profile",
+  "title": "User Profile",
+  "coreApp": true,
+  "version": "30.3.1",
+  "author": {
+    "name": "Adheesh Bhatia"
+  },
+  "description": "User Profile App for DHIS2"
+}
